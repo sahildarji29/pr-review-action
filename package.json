@@ -1,0 +1,15 @@
+{
+  "name": "pr-review-action",
+  "version": "1.0.0",
+  "description": "AI-powered PR reviewer — full file context, conversation-aware re-reviews, inline GitHub comments",
+  "type": "module",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^3.0.0",
+    "@actions/github": "^9.0.0",
+    "@actions/http-client": "^4.0.0",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@octokit/rest": "^21.1.1"
+  }
+}

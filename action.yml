@@ -1,0 +1,28 @@
+name: 'PR Review Agent'
+description: 'AI code reviewer — full file context, conversation-aware re-reviews, inline comments'
+author: 'vcian'
+branding:
+  icon: 'eye'
+  color: 'blue'
+inputs:
+  github-token:
+    description: 'GitHub token. Use secrets.GITHUB_TOKEN'
+    required: true
+  anthropic-api-key:
+    description: 'Anthropic API key for Claude'
+    required: true
+  model:
+    description: 'Claude model to use'
+    required: false
+    default: 'claude-haiku-4-20250307'
+  max-files:
+    description: 'Max number of files to fetch full content for'
+    required: false
+    default: '8'
+  max-file-chars:
+    description: 'Max characters per file content'
+    required: false
+    default: '8000'
+runs:
+  using: 'node20'
+  main: 'src/index.js'
