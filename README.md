@@ -36,7 +36,7 @@ jobs:
       contents: read
       pull-requests: write
     steps:
-      - uses: vcian/pr-review-action@v1
+      - uses: sahildarji29/pr-review-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}

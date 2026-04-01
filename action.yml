@@ -1,6 +1,6 @@
 name: 'PR Review Agent'
 description: 'AI code reviewer — full file context, conversation-aware re-reviews, inline comments'
-author: 'vcian'
+author: 'sahildarji29'
 branding:
   icon: 'eye'
   color: 'blue'
